@@ -1,7 +1,7 @@
 require('dotenv').config()
 const mongoose = require("mongoose");
 
-const url=`mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster.s1wbyyy.mongodb.net/?retryWrites=true&w=majority`;
+const url=process.env.url;
 
 const connecttomongo = async()=>{
     try {

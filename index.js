@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require('body-parser');
 const Task = require("./model");
 const app = express();
-const port = 3000;
+const port = 8080;
 // Connect to Database
 db();
 app.use(bodyParser.json());
