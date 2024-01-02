@@ -1,6 +1,7 @@
+require('dotenv').config()
 const mongoose = require("mongoose");
 
-const url="mongodb://localhost:27017/Pacefin";
+const url=`mongodb+srv://${process.env.USER}:${process.env.PASS}@pacefin.0xa5om4.mongodb.net`;
 
 const connecttomongo = async()=>{
     try {
